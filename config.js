@@ -16,17 +16,17 @@ const CONFIG = {
 
   // Each round: question, answer keyword (blank = any answer works), hint, memory message
   rounds: [
-    { q: "What color we both were wearing?",
+    { q: "What color we both were wearing in the end of our first date?",
       image: "frames/frame1.jpg",
       a: "pink black", hint: "We were looking soo cute together!",
       m: "I still smile every time I think about that date. 😂" },
-    // { q: "Where were we in the end of the day on our first date?",
-    //   image: "frames/frame2.jpg",
-    //   a: "cafe", hint: "Think about the place…",
-    //   m: "That place, that day… it was perfect because you were there. 💕" },
-    // { q: "What dishes did we order?",
-    //   image: "frames/frame3.jpg",
-    //   a: "sandwich", hint: "that was quite big…",
-    //   m: "I remembered how you taught me how to eat that sandwich. 😂" },
+    { q: "Where were we in the end of the day on our first date?",
+      image: "frames/frame2.jpg",
+      a: "cafe", hint: "Think about the place…",
+      m: "That place, that day… it was perfect because you were there. 💕" },
+    { q: "What dishes did we order?",
+      image: "frames/frame3.jpg",
+      a: "sandwich", hint: "that was quite big…",
+      m: "I remembered how you taught me how to eat that sandwich. 😂" },
   ]
 };
