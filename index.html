@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Recreate our moment💕</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <section id="intro" class="card center">
+    <h1 id="introTitle"></h1>
+    <p class="sub" id="introText"></p>
+    <button id="startBtn">Start 💕</button>
+  </section>
+
+  <section id="game" class="hidden">
+    <div class="dots" id="dots"></div>
+
+    <div id="qBox" class="card">
+      <h2 id="qText"></h2>
+      <input type="text" id="ans" placeholder="Your answer…" autocomplete="off">
+      <div class="err" id="qErr"></div>
+      <div class="center" style="margin-top:8px"><button id="ansBtn">Check ✨</button></div>
+    </div>
+
+    <div id="pBox" class="card hidden">
+      <h2 id="pTitle"></h2>
+      <p class="sub" id="pHelp">Tap one piece, then another to swap them.</p>
+      <div class="puzzle" id="puzzle"></div>
+      <div id="memMsg" class="msg hidden"></div>
+      <div class="center" style="margin-top:12px"><button id="nextBtn" class="hidden">Next 💗</button></div>
+    </div>
+  </section>
+
+  <section id="finale" class="hidden">
+    <div class="card center">
+      <h2 id="finalTitle"></h2>
+      <video id="finalVid" controls playsinline preload="metadata"></video>
+      <p class="sub" id="videoErr"></p>
+    </div>
+    <p class="sub">👇 Psst… something is jumping at the bottom. Tap it.</p>
+  </section>
+</div>
+
+<button id="gift" class="gift hidden" aria-label="Prize box">🎁</button>
+
+<div id="modal" class="modal hidden">
+  <div class="card">
+    <h2 id="mTitle"></h2>
+    <textarea id="wish" placeholder="Write anything you want…"></textarea>
+    <div class="err" id="wErr"></div>
+    <div class="center btnrow">
+      <button id="sendBtn">Send my wish 💌</button>
+      <button id="closeBtn" class="ghost">Close</button>
+    </div>
+    <p class="sub hidden" id="fallback"></p>
+  </div>
+</div>
+
+<div class="hearts" id="hearts"></div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
